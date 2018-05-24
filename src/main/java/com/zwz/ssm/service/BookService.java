@@ -24,5 +24,5 @@ public interface BookService {
 //    查看某学生的预约的搜优图书
     List<Appointment> getAppointByStu(Long studentId);
     //返回预约成功的实体类
-    AppointExecution appoin(long bookId , long studentId);
+    AppointExecution appoint(long bookId , long studentId);
 }

@@ -58,7 +58,7 @@ public class BookServiceImpl  implements BookService{
     }
 
     @Transactional
-    public AppointExecution appoin(long bookId, long studentId) {
+    public AppointExecution appoint(long bookId, long studentId) {
         try {
             int update = bookMapper.reduceNumber(bookId);//减库存
             if(update <= 0){//已经没有库存
